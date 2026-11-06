@@ -31,10 +31,20 @@
 // v.Velocidade = -1;
 // Console.WriteLine(v.Velocidade);
 
-Funcionario f = new Funcionario();
+// Funcionario f = new Funcionario();
 
-f.Nome = "João";
-f.Cargo = "Servente de pedreiro";
-//f.Salario = 2000; // Não permite alterar salário por conta do private set;
-f.AumentarSalario(10);
-f.ConsultarSalario();
+// f.Nome = "João";
+// f.Cargo = "Servente de pedreiro";
+// //f.Salario = 2000; // Não permite alterar salário por conta do private set;
+// f.AumentarSalario(10);
+// f.ConsultarSalario();
+
+Livro l1 = new Livro();
+Livro l2 = new Livro("Titulo1");
+Livro l3 = new Livro("Titulo2", "Autor1");
+Livro l4 = new Livro("Titulo3", "Autor2", 9000);
+
+Console.WriteLine($"{l1.Titulo} {l1.Autor} {l1.NumeroPaginas}");
+Console.WriteLine($"{l2.Titulo} {l2.Autor} {l2.NumeroPaginas}");
+Console.WriteLine($"{l3.Titulo} {l3.Autor} {l3.NumeroPaginas}");
+Console.WriteLine($"{l4.Titulo} {l4.Autor} {l4.NumeroPaginas}");
