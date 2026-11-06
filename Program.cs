@@ -20,13 +20,21 @@
 // Console.WriteLine(calc.Multiplicar(35, 10.5));
 // Console.WriteLine(Calculadora.Dividir(10m, 50m));
 
-Veiculo v = new Veiculo();
+// Veiculo v = new Veiculo();
 
-v.Velocidade = 201;
-Console.WriteLine(v.Velocidade);
-v.Velocidade = 10;
-Console.WriteLine(v.Velocidade);
-v.Velocidade = 180;
-Console.WriteLine(v.Velocidade);
-v.Velocidade = -1;
-Console.WriteLine(v.Velocidade);
+// v.Velocidade = 201;
+// Console.WriteLine(v.Velocidade);
+// v.Velocidade = 10;
+// Console.WriteLine(v.Velocidade);
+// v.Velocidade = 180;
+// Console.WriteLine(v.Velocidade);
+// v.Velocidade = -1;
+// Console.WriteLine(v.Velocidade);
+
+Funcionario f = new Funcionario();
+
+f.Nome = "João";
+f.Cargo = "Servente de pedreiro";
+//f.Salario = 2000; // Não permite alterar salário por conta do private set;
+f.AumentarSalario(10);
+f.ConsultarSalario();

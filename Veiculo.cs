@@ -24,7 +24,6 @@ namespace Atividade_POO
                 {
                     Console.WriteLine(e.Message);
                 }
-
             }
         }
     }
